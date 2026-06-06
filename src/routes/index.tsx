@@ -40,7 +40,7 @@ function Home() {
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
               <Button size="lg" variant="secondary" asChild>
-                <Link to="/browse" search={{ sort: "newest" as const }}>
+                <Link to="/browse" search={{ sort: "newest" as const, q: undefined, category: undefined }}>
                   Start browsing <ArrowRight className="ml-1.5 h-4 w-4" />
                 </Link>
               </Button>
@@ -81,7 +81,7 @@ function Home() {
             <p className="text-sm text-muted-foreground">Loved by students across campus.</p>
           </div>
           <Button variant="ghost" size="sm" asChild>
-            <Link to="/browse" search={{ sort: "rating" as const }}>View all <ArrowRight className="ml-1 h-4 w-4" /></Link>
+            <Link to="/browse" search={{ sort: "rating" as const, q: undefined, category: undefined }}>View all <ArrowRight className="ml-1 h-4 w-4" /></Link>
           </Button>
         </div>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
@@ -97,7 +97,7 @@ function Home() {
             <p className="text-sm text-muted-foreground">Fresh from your seniors.</p>
           </div>
           <Button variant="ghost" size="sm" asChild>
-            <Link to="/browse" search={{ sort: "newest" as const }}>View all <ArrowRight className="ml-1 h-4 w-4" /></Link>
+            <Link to="/browse" search={{ sort: "newest" as const, q: undefined, category: undefined }}>View all <ArrowRight className="ml-1 h-4 w-4" /></Link>
           </Button>
         </div>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">

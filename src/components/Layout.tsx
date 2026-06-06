@@ -61,7 +61,7 @@ export function Layout() {
               </DropdownMenuContent>
             </DropdownMenu>
             <Button variant="ghost" size="sm" asChild>
-              <Link to="/browse" search={{ sort: "newest" as const }}>Browse</Link>
+              <Link to="/browse" search={{ sort: "newest" as const, q: undefined, category: undefined }}>Browse</Link>
             </Button>
           </nav>
 
@@ -89,7 +89,7 @@ export function Layout() {
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end">
-              <DropdownMenuItem asChild><Link to="/browse" search={{ sort: "newest" as const }}>Browse</Link></DropdownMenuItem>
+              <DropdownMenuItem asChild><Link to="/browse" search={{ sort: "newest" as const, q: undefined, category: undefined }}>Browse</Link></DropdownMenuItem>
               {categories.map((c) => (
                 <DropdownMenuItem key={c.slug} asChild>
                   <Link to="/category/$slug" params={{ slug: c.slug }}>{c.name}</Link>

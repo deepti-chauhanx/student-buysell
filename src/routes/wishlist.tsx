@@ -28,7 +28,7 @@ function WishlistPage() {
           </div>
           <h2 className="mt-4 text-lg font-semibold">No saved items yet</h2>
           <p className="mt-1 text-sm text-muted-foreground">Tap the heart on any listing to save it for later.</p>
-          <Button asChild className="mt-4"><Link to="/browse" search={{ sort: "newest" as const }}>Browse listings</Link></Button>
+          <Button asChild className="mt-4"><Link to="/browse" search={{ sort: "newest" as const, q: undefined, category: undefined }}>Browse listings</Link></Button>
         </div>
       ) : (
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">

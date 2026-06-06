@@ -88,7 +88,7 @@ function Browse() {
       {list.length === 0 ? (
         <div className="rounded-2xl border border-dashed border-border p-12 text-center">
           <p className="text-muted-foreground">No listings match your search.</p>
-          <Button variant="link" asChild><Link to="/browse" search={{ sort: "newest" as const }}>Clear filters</Link></Button>
+          <Button variant="link" asChild><Link to="/browse" search={{ sort: "newest" as const, q: undefined, category: undefined }}>Clear filters</Link></Button>
         </div>
       ) : (
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
