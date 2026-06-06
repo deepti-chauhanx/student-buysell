@@ -1,0 +1,1 @@
+Student BuySell is a dedicated marketplace for students to buy, sell, and exchange items within their campus community. From textbooks, notes, electronics, and hostel essentials to bicycles and study materials, students can connect directly with verified peers for safe, affordable, and hassle-free transactions. Save money, reduce waste, and give unused items a second life.
