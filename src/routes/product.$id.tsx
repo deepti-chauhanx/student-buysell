@@ -29,7 +29,7 @@ export const Route = createFileRoute("/product/$id")({
   notFoundComponent: () => (
     <div className="mx-auto max-w-md px-4 py-20 text-center">
       <h1 className="text-2xl font-bold">Product not found</h1>
-      <Button asChild className="mt-4"><Link to="/browse" search={{ sort: "newest" as const }}>Back to browse</Link></Button>
+      <Button asChild className="mt-4"><Link to="/browse" search={{ sort: "newest" as const, q: undefined, category: undefined }}>Back to browse</Link></Button>
     </div>
   ),
 });
